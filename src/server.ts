@@ -32,5 +32,5 @@ const options = {
 }
 
 https.createServer(options, server).listen(port, () => {
-  console.log(`[SERVER] Running at http://localhost:3000`);
+  console.log(`[SERVER] Running at http://localhost:`+port);
 });
