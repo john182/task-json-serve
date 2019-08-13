@@ -5,7 +5,7 @@
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --watch dist/server.js --exec \"npm run build\""
+    "start": "nodemon --watch src/ --exec \"ts-node src/server.ts\" -e ts"
   },
   "keywords": [],
   "author": "",
