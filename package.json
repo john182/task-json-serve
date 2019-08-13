@@ -1,18 +1,26 @@
 {
-  "name": "json-server-heroku",
+  "name": "ts-server",
   "version": "1.0.0",
-  "description": "Simple json-base database to deploy to Heroku",
-  "main": "server.js",
+  "description": "",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "build": "tsc",
+    "start": "nodemon --watch dist/server.js --exec \"npm run build\""
   },
-  "keywords": [
-    "json-server,heroku, node, REST API"
-  ],
-  "author": "Jesper Orb",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^0.12.1"
+    "@types/express": "^4.17.0",
+    "@types/jsonwebtoken": "^8.3.3",
+    "@types/node": "^12.7.1",
+    "express": "^4.17.1",
+    "json-server": "^0.15.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.5.3"
   }
 }
